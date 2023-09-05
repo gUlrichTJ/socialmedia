@@ -1,0 +1,4 @@
+// Source: https://css-ricks.com/snipets/scss/px-to-on-functions/
+@function rem($pixels, $context: 16) {
+    @return ($pixels / $context) * 1rem;
+}
