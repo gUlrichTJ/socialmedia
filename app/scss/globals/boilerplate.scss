@@ -4,9 +4,11 @@ html {
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
-    
+    margin : 0;
+    padding: 0;
+    font-family: var(--font-inter);
 }
