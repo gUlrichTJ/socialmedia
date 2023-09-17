@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
+const browserSync = require('browser-sync');
 const browsersync = require('browser-sync').create();
 
 // Use dart-sass for @use
@@ -40,6 +41,10 @@ function browserSyncServe(cb) {
             },
         },
     });
+    cb();
+}
+function browserSyncReload(cp) {
+    browserSync.reload();
     cb();
 }
 
