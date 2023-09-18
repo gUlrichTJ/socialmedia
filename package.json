@@ -6,13 +6,14 @@
     "browser-sync": "^2.29.3",
     "cssnano": "^6.0.1",
     "dart-sass": "^1.25.0",
-    "gulp": "^3.9.1",
+    "graceful-fs": "^4.2.11",
     "gulp-babel": "^8.0.0",
     "gulp-cli": "^2.3.0",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
-    "postcss": "^8.4.29"
+    "postcss": "^8.4.29",
+    "sass": "^1.67.0"
   },
   "name": "socialmedia",
   "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
@@ -31,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/gUlrichTJ/socialmedia/issues"
   },
-  "homepage": "https://github.com/gUlrichTJ/socialmedia#readme"
+  "homepage": "https://github.com/gUlrichTJ/socialmedia#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }

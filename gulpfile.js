@@ -6,11 +6,10 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
-const browserSync = require('browser-sync');
 const browsersync = require('browser-sync').create();
 
 // Use dart-sass for @use
-sass.compiler = require('dart-sass');
+//sass.compiler = require('dart-sass');
 
 // Sass Task
 function scssTask() {
@@ -58,4 +57,4 @@ function watchTask() {
 }
 
 // Default Gulp Task
-exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+exports.default = gulp.series(scssTask, jsTask, browserSyncServe, watchTask);
