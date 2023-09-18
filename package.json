@@ -20,11 +20,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gUlrichTJ/socialmedia.git"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.0.0"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +38,6 @@
   },
   "homepage": "https://github.com/gUlrichTJ/socialmedia#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.0"
   }
 }
