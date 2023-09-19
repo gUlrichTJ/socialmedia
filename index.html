@@ -26,22 +26,27 @@
 <body>
 
   <header class="header container">
-    <h1>Media Dashboard</h1> 
-    Total Followers: 23,004  
 
-    <fieldset aria-label="theme toggle" role="radiogroup">
+    <div class="header__title">
+      <h1>Media Dashboard</h1> 
+    Total Followers: 23,004  
+    </div>
+    
+
+    <fieldset class="header__toggle toggle" 
+      aria-label="theme toggle" 
+      role="radiogroup">
       <label for="dark">Dark</label>
       <div class="toggle__wrapper">
         <input type="radio" name="theme" id="dark" />
         <input type="radio" name="theme" id="system" checked />
         <input type="radio" name="theme" id="light" >
-        <span aria-hidden="true" class="c-toggle__background"></span>
-        <span aria-hidden="true" class="c-toggle__switcher"></span>
+        <span aria-hidden="true" class="toggle__background"></span>
+        <span aria-hidden="true" class="toggle__button"></span>
       </div>
       
       <label for="dark">System Pref</label>
       <label for="light">Light</label>
-      Dark Mode
     </fieldset>
   </header>
 
