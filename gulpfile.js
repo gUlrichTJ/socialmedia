@@ -1,6 +1,6 @@
 // Initialize modules
 const gulp = require('gulp');
-const browserSync = require('browsersync');
+const browserSync = require('browser-sync');
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
@@ -31,7 +31,7 @@ function jsTask() {
 
 // Browsersync
 function browserSyncServe(cb) {
-    browsersync.init({
+    browserSync.init({
         server: {
             baseDir: '.',
         },
@@ -54,7 +54,7 @@ function watchTask() {
     watch('*.html', browserSyncReload);
     watch(
         ['app/scss/**/*.scss', 'app/**/*.js'],
-        series(scssTask, jsTask, browerSyncReload)
+        series(scssTask, jsTask, browserSyncReload)
     );
 }
 
