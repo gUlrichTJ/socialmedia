@@ -29,7 +29,18 @@
     <h1>Media Dashboard</h1> 
     Total Followers: 23,004  
 
-    <fieldset>
+    <fieldset aria-label="theme toggle" role="radiogroup">
+      <label for="light">Light</label>
+      <div class="toggle__wrapper">
+        <input type="radio" name="theme" id="dark" />
+        <input type="radio" name="theme" id="system" checked />
+        <input type="radio" name="theme" id="light" >
+        <span aria-hidden="true" class="c-toggle__background"></span>
+        <span aria-hidden="true" class="c-toggle__switcher"></span>
+      </div>
+
+      <label for="dark">System Pref</label>
+      <label for="dark">Dark</label>
       Dark Mode
     </fieldset>
   </header>
