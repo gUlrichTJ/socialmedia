@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Source: https://css-ricks.com/snipets/scss/px-to-on-functions/
 @function rem($pixels, $context: 16) {
     @return (math.div($pixels / $context)) * 1rem;
